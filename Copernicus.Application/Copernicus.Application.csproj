@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Copernicus.Core\Copernicus.Core.csproj" />
+      <ProjectReference Include="..\Copernicus.Infrastructure\Copernicus.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Scrutor" Version="3.0.2" />
+    </ItemGroup>
+
+</Project>
