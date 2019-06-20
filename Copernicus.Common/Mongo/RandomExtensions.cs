@@ -22,6 +22,11 @@ namespace Copernicus.Common.Mongo
             {
                 return added.ToList();
             }
+                
+            if (documentsCount < max)
+            {
+                max = documentsCount;
+            }
 
             var random = new Random();
 
