@@ -37,8 +37,6 @@ namespace Copernicus.Common.Mongo
                 var item = await collection.Where(criteria).Skip(randomNumber).FirstAsync();
                 var exisiting = added.FirstOrDefault(x => x.Id == item.Id);
 
-                Console.WriteLine(item.Id);
-
                 if (exisiting == null)
                 {
                     added.Add(item);
